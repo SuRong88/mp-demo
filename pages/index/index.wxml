@@ -1,0 +1,10 @@
+<view class="container">
+    <mp-header isHome="{{isHome}}" showBack cln="'header'" title="首页"></mp-header>
+    <view class="content">
+    </view>
+    <!-- 弹窗 -->
+    <mp-popBox wx:if="{{showMask}}" cln="''" title="您确定退出登录吗？" bind:confirm='confirmHandle' bind:cancel='cancelHandle'
+        confirmText="确定">
+    </mp-popBox>
+    <mp-tabbar tabbarIndex="0"></mp-tabbar>
+</view>
