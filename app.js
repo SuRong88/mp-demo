@@ -8,8 +8,8 @@ App({
     },
     globalData: {
         isConnected: true,
-        userInfo: null,
-        roleType: 1 //用户角色 1-服务商、2-商家
+        isLogined: false,
+        userInfo: null
     },
     // 展示本地存储能力
     showLogs: function() {

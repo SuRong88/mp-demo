@@ -90,15 +90,14 @@ function showModal(title, content, showCancel, cancelText, confirmText, cb_confi
     })
 }
 
-// 设置自定义头部高度
-function setHeader(that) {
+// 设置头部
+function setHeader(page) {
     wx.getSystemInfo({
         success: res => {
-            that.setData({
+            page.setData({
                 headBarHeight: res.statusBarHeight / (res.windowWidth / 750),
                 padHeight: res.statusBarHeight / (res.windowWidth / 750) + 88
             })
-            // console.log(res.statusBarHeight / (res.windowWidth / 750))
         }
     })
 }
